@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Application Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .invalid-feedback {
+      display: none;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+  <h1>Internship Application Form</h1>
+  <form id="internship-form">
+    <div class="mb-3">
+      <label for="first-name-input" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="first-name-input" name="first-name">
+      <div class="invalid-feedback">Please enter your first name.</div>
+    </div>
+    <div class="mb-3">
+      <label for="last-name-input" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="last-name-input" name="last-name">
+      <div class="invalid-feedback">Please enter your last name.</div>
+    </div>
+    <div class="mb-3">
+      <label for="email-input" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email-input" name="email">
+      <div class="invalid-feedback">Please enter a valid email address.</div>
+    </div>
+    <div class="mb-3">
+      <label for="college-input" class="form-label">College Name</label>
+      <input type="text" class="form-control" id="college-input" name="college">
+      <div class="invalid-feedback">Please enter your college name.</div>
+    </div>
+    <div class="mb-3">
+      <label for="roll-no-input" class="form-label">Roll No</label>
+      <input type="text" class="form-control" id="roll-no-input" name="roll-no">
+      <div class="invalid-feedback">Please enter your roll number.</div>
+    </div>
+    <div class="mb-3">
+      <label for="graduation-year-input" class="form-label">Graduation Year</label>
+      <select class="form-select" id="graduation-year-input" name="graduation-year">
+        <option selected disabled>Select graduation year</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+      <div class="invalid-feedback">Please select your graduation year.</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="conditions-checkbox" name="conditions">
+      <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
+      <div class="invalid-feedback">Please agree to the terms and conditions.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
