@@ -29,22 +29,22 @@
     </div>
     <div class="mb-3">
       <label for="email-input" class="form-label">Email Address</label>
-      <input type="email" class="form-control" id="email-input" name="email">
+      <input type="email" class="form-control" id="email-input" name="email" required>
       <div class="invalid-feedback">Please enter a valid email address.</div>
     </div>
     <div class="mb-3">
       <label for="college-input" class="form-label">College</label>
-      <input type="text" class="form-control" id="college-input" name="college">
+      <input type="text" class="form-control" id="college-input" name="college" required>
       <div class="invalid-feedback">Please enter your college name.</div>
     </div>
     <div class="mb-3">
       <label for="roll-no-input" class="form-label">Roll No.</label>
-      <input type="text" class="form-control" id="roll-no-input" name="roll-no">
+      <input type="text" class="form-control" id="roll-no-input" name="roll-no" required>
       <div class="invalid-feedback">Please enter your roll number.</div>
     </div>
     <div class="mb-3">
       <label for="grad-year-select" class="form-label">Graduation Year</label>
-      <select class="form-select" id="grad-year-select" name="graduation-year">
+      <select class="form-select" id="grad-year-select" name="graduation-year" >
         <option selected disabled>Select graduation year</option>
         <option value="2020">2020</option>
         <option value="2021">2021</option>
@@ -55,8 +55,8 @@
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="conditions-checkbox" name="conditions">
-      <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
-      <div class="invalid-feedback">Please agree to the terms and conditions.</div>
+      <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+      <div class="invalid-feedback">Agree to terms and conditions</div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
